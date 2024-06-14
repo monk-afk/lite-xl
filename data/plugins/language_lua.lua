@@ -33,13 +33,20 @@ syntax.add {
     { pattern = "[<>~=]=",                   type = "binop" },
     { pattern = "[%+%-=/%*%^%%#<>]",         type = "binop" },
     { pattern = "%s[%a_][%w_]*()%(.*%)",     type = {"function_name", "white"} },
+    -- { pattern = "%s*[%a_][%w_]+%s+",         type = "variable" },
+    -- { pattern = "%s*[%a_][%w_]+%s*()=",         type = {"variable", "binop"} },
+    -- { pattern = "%.[%a_][%w_]+()%[",           type = {"variable_index", "white"} },
+
+    -- -- libs
+    -- { pattern = "%.?[%a_][%w_]+%s*%(",              type = "lib_fn"},
   },
 
 -- local function fun_name(variable) return print("test", true) end
+
   symbols = {
     ---===[[[ defined in colors/monkdark.lua ]]]===---
     ["local"]          = "crimson",
-    ["function"]       = "m_bluegreen",
+    ["function"]       = "green",
 
     ["break"]          = "terminator",
     ["end"]            = "terminator",
