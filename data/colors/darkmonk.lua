@@ -1,21 +1,23 @@
 local style = require "core.style"
 local common = require "core.common"
 
-style.background               = { common.color "#010101" }
+style.background               = { common.color "#212121" }
 style.background2              = { common.color "#080808" }
 style.background3              = { common.color "#010101" }
 style.text                     = { common.color "#707070" }
 style.caret                    = { common.color "#888888" }
 style.accent                   = { common.color "#d0d0d0" }
+ -- style.dim - text color for nonactive tabs, tabs divider, prefix in log and
+ -- search, hotkeys for context menu and command view
 style.dim                      = { common.color "#303030" }
 style.divider                  = { common.color "#080808" }
 style.selection                = { common.color "#631919" }
 style.line_number              = { common.color "#202020" }
-style.line_number2             = { common.color "#707070" }
+style.line_number2             = { common.color "#707070" } -- With cursor
 style.line_highlight           = { common.color "#101010" }
-style.scrollbar                = { common.color "#252525" }
-style.scrollbar2               = { common.color "#303030" }
-style.scrollbar_track          = { common.color "#252529" }
+style.scrollbar                = { common.color "#e52525" } -- The slider
+style.scrollbar2               = { common.color "#e52525" } -- Hovering the slider
+style.scrollbar_track          = { common.color "#212121" } -- Bar while hovering
 style.nagbar                   = { common.color "#FF0000" }
 style.nagbar_text              = { common.color "#FFFFFF" }
 style.nagbar_dim               = { common.color "rgba(0, 0, 0, 0.45)" }
